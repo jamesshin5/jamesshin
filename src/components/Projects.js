@@ -36,7 +36,6 @@ const Projects = () => {
   function getProjects(data) {
     const projectsArray = [];
     data.allProjectsJson.edges.forEach( (item, index) => {
-      console.log(item.node.tags);
       projectsArray.push(
         <ProjectCard key={index}>
           <ProjectImg src={item.node.img.childImageSharp.fluid.src}
