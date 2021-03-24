@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { menuData } from '../data/MenuData'
 import {heroButton} from '../data/HeroButtons'
 import { Link } from 'react-scroll'
+import {Link as GatsbyLink} from 'gatsby'
 import {FaTimes} from 'react-icons/fa'
 
 const DropDown = ({isOpen, toggle}) => {
@@ -53,7 +54,7 @@ const HeroButtons = styled.div`
   justify-content: space-between;
 `
 
-const IconLinks = styled(Link)`
+const IconLinks = styled(GatsbyLink)`
   font-size: 1.5rem;
   color: black;
   transition: 0.5s;
@@ -81,6 +82,10 @@ const Icon = styled.div`
 `
 const CloseIcon = styled(FaTimes)`
   color: #fff;
+  transition: 0.3s;
+  &:hover {
+    color: #3FE0D0;
+  }
 `
 const DropDownWrapper = styled.div`
   display: flex;

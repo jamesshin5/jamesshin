@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-scroll'
+import {Link as GatsbyLink} from 'gatsby'
 import {heroButton} from '../data/HeroButtons'
 import {StaticImage} from 'gatsby-plugin-image'
 
@@ -127,7 +128,7 @@ const HeroButtons = styled.div`
   justify-content: space-between;
 `
 
-const IconLinks = styled(Link)`
+const IconLinks = styled(GatsbyLink)`
   font-size: 1.5rem;
   color: black;
   transition: 0.5s;
