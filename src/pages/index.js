@@ -1,29 +1,29 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React, {useState} from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Hero from "../components/hero"
+import Projects from '../components/Projects'
+import Experience from "../components/Experience"
+import DropDown from '../components/DropDown'
+import Contact from '../components/Contact'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
+
+  return (
+    <Layout toggle={toggle}>
+      <SEO title="Home" />
+      <DropDown toggle={toggle} isOpen={isOpen} />
+      <Hero />
+      <Projects />
+      <Experience />
+      <Contact/>
+    </Layout>
+)}
 
 export default IndexPage

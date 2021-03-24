@@ -1,0 +1,28 @@
+[
+  {
+    "title" : "Full Stack Engineer",
+    "company" : "Web Dev at Berkeley",
+    "time" : "Present",
+    "descriptionMain" : "Currently building the new iteration of Clicked, an edTech startup and beta platform, using the MERN stack and Next.js",
+    "descriptionOne" : "Built out a user authentication system using Json Web Tokens and coded Nextjs API routes for user registration/sign up and login.",
+    "descriptionTwo" : "Implemented the platform's backend with MongoDB and Nextjs, creating REST API's with protected routes that check for authentication as well as permission levels such as admin or coach."
+  },
+  {
+    "title" : "Software Engineer Intern",
+    "company" : "Avenu",
+    "time" : "Su 2020",
+    "descriptionMain" : "Developed mobile application for event promotion platform with React Native framework and Google Firebase suites",
+    "descriptionOne" : "Implemented the friendships feature among users: designed the interface for friend invites and restructured the noSQL backend from relationships in upper level collections to mappings within documents to make more efficient fetch requests",
+    "descriptionTwo" : "Rewrote the entire feature of creating events in order to allow users to customize tickets, guest list, and event personnel during event creation, and manage event settings later with React-Redux and state management"
+  },
+  {
+    "title" : " CS Academic Intern",
+    "company" : "UC Berkeley EECS Dept",
+    "time": "Sp 2020",
+    "descriptionMain" : "Instructed 50 students in 2-hour labs twice a week, facilitated discussion, and reviewed lecture and course material",
+    "descriptionOne" :  "Taught concepts like sort and search algorithms, complexity analysis, tree traversals, heaps, priority queues, and OOP",
+    "descriptionTwo" : "Answered student's questions about the course, giving advice on projects and debugging/troubleshooting student code."
+  }
+]
+
+

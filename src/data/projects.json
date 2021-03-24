@@ -1,0 +1,32 @@
+[
+  {
+    "index": "1. ",
+    "img": "../images/spero.png",
+    "alt": "spero project image",
+    "name": "Shop Spero",
+    "tags" : ["REACT", "CHAKRA UI", "EXPRESS", "NETLIFY"],
+    "demolink" : "https://shopspero.org",
+    "codelink" : "https://github.com/jamesshin5/shopspero",
+    "description" : "I build a website from the ground up with React and Chakra to open a virtual store showcasing Christian-themed merchandise as part of the remote marketing & sales solutions in response to COVID-19. I used React Router for navigation and React Hooks for specific component logic such as the image carousel on the landing page."
+  },
+  {
+    "index": "2. ",
+    "img": "../images/kalenda.png",
+    "alt": "kalenda project image",
+    "name": "Kalenda.io",
+    "tags" : ["REACT", "NEXT.JS", "EXPRESS", "GOOGLE FIREBASE"],
+    "demolink" : "https://kalenda.io",
+    "codelink" : "https://github.com/kalenda-io",
+    "description" : "I used React, Typescript, and Next.js to collaborate with other Berkeley developers and build a platform for planning remote team meetings. I implemented functionality and design of the landing pages, referral pages, and modular components build using Storybook, as well as implmeneting a feature for email suggestion for event invites."
+  },
+  {
+    "index": "3. ",
+    "img": "../images/visualizer.png",
+    "alt": "visualizer project image",
+    "name": "Pathfinding Visualizer",
+    "tags" : ["REACT", "HTML", "CSS", "JAVSCRIPT"],
+    "demolink" : "https://jamesshin5.github.io/PathfinderVisualizer/",
+    "codelink" : "https://github.com/jamesshin5/PathfinderVisualizer",
+    "description" : "I created a site that helps the user understand pathfinding algorithms through visualization. This project allows for selecting different pathfinding algorithms (such as Dikstra's, A*, BFS, DFS, and Greedy), setting the start and end points, and creating walls through click and drag to replicate obstacles."
+  }
+]
