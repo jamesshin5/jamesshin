@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from './Button'
 import {Link} from 'react-scroll'
 import {heroButton} from '../data/HeroButtons'
 import {StaticImage} from 'gatsby-plugin-image'
