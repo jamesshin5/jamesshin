@@ -38,9 +38,12 @@ const Projects = () => {
     data.allProjectsJson.edges.forEach( (item, index) => {
       projectsArray.push(
         <ProjectCard key={index}>
-          <ProjectImg src={item.node.img.childImageSharp.fluid.src}
-          fluid={item.node.img.childImageSharp.fluid}
-          alt={item.node.alt}/>
+          <a href={item.node.demolink}>
+            <ProjectImg 
+            src={item.node.img.childImageSharp.fluid.src}
+            fluid={item.node.img.childImageSharp.fluid}
+            alt={item.node.alt}/>
+          </a>
           <ProjectInfo>
               <Index>{item.node.index}</Index>
               <ProjectName>{item.node.name}</ProjectName>
@@ -114,6 +117,7 @@ const ProjectImg = styled(Img)`
   border-radius: 5px;
   filter: brightness(70%);
   transition: 0.2s ease;
+  cursor: pointer;
 
   &:hover {
     filter: brightness(100%);
