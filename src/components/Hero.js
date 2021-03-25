@@ -190,6 +190,7 @@ export const ContactButton = styled(ScrollLink)`
 
   &:hover {
     background: ${({primary}) => (primary ? '#a464f4' : '#a464f4')};
+    color: ${ ({primary}) => (primary ? '#fff' : '#fff')};
     transform: translateY(-2px);
   }
 
