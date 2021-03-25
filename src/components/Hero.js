@@ -39,8 +39,6 @@ const Hero = () => {
             to="project-container" 
             smooth={true} 
             duration={500} 
-            spy={true} 
-            exact="true" 
             offset={-95}
           >
             View Projects
@@ -197,52 +195,18 @@ export const ContactButton = styled(ScrollLink)`
 
   @keyframes pulse {
 	0% {
-		transform: scale(0.95);
+		transform: scale(1);
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
 	}
 
 	50% {
-		transform: scale(1);
+		transform: scale(0.95);
 		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
 	}
 
 	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
-}
-`
-
-const MoreButton = styled.div`
-  background: #3FE0D0;
-	border-radius: 5px;
-  height: 2rem;
-  width: 10rem;
-
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse 2s infinite;
-  cursor: pointer;
-
-
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
-
-	70% {
 		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
-
-	100% {
-		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	}
 }
-`
-
-const MoreText = styled.h1`
-  font-size: clamp(0.5rem, 3vw, 1rem);
 `

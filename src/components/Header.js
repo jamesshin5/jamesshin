@@ -55,6 +55,10 @@ const Nav = styled.nav`
   position: fixed;
   /* padding-left: 5%;
   padding-right: 5%; */
+
+  @media screen and (max-width:768px) {
+    padding: 3rem 7%;
+  }
 `
 
 const NavLink = styled(Link)`
@@ -97,7 +101,7 @@ const Bars = styled(FaBars)`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-75%, 75%);
+    transform: translate(-100%, 100%);
     font-size: 1.8rem;
     cursor: pointer;
 
