@@ -42,7 +42,7 @@ function getExperiences(data) {
 
   return (
     <ExperienceContainer id="experiences-container" >
-      <ExperienceHeader data-sal="slide-left" data-sal-easing="ease" data-sal-duration="1000">Experience</ExperienceHeader>
+      <ExperienceHeader data-sal="slide-left" data-sal-easing="ease" data-sal-duration="1000">Experiences</ExperienceHeader>
       <ExperienceTable data-sal="slide-up" data-sal-easing="ease" data-sal-duration="1000">
         {getExperiences(data)}
       </ExperienceTable>
