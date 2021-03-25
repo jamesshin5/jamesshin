@@ -4,7 +4,7 @@
     "company" : "Web Dev at Berkeley",
     "time" : "Present",
     "descriptionMain" : "Currently building the new iteration of Clicked, an edTech startup and beta platform, using the MERN stack and Next.js",
-    "descriptionOne" : "Built out a user authentication system using Json Web Tokens and coded Nextjs API routes for user registration/sign up and login.",
+    "descriptionOne" : "Built out a user authentication system using JSON Web Tokens and coded Nextjs API routes for user registration/sign up and login.",
     "descriptionTwo" : "Implemented the platform's backend with MongoDB and Nextjs, creating REST API's with protected routes that check for authentication as well as permission levels such as admin or coach."
   },
   {
