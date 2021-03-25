@@ -56,9 +56,10 @@ const Hero = () => {
       <StaticImage 
         src="../images/coding.png" 
         alt="something" 
-        width={350}
         style={{
-          transform: "translate(-75%, 0%)"
+          transform: "translate(-75%, 0%)",
+          width: "clamp(5rem,14vw, 18rem )"
+
         }}
         data-sal="slide-down" data-sal-easing="ease" data-sal-duration="2000"
       />
