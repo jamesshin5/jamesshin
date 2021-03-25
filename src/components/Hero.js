@@ -11,10 +11,10 @@ const Hero = () => {
       <HeroContent>
         <HeroItems>
           <Horizontal>
-            <HeroH1 data-sal="slide-down" data-sal-easing="ease" data-sal-duration="1500">Hi! I'm </HeroH1>
+            <HeroH1 data-sal="slide-down" data-sal-easing="ease" data-sal-duration="2000" data-sal-delay="250">Hi! I'm </HeroH1>
             <HeroH1 blue="true" end="true"> James.</HeroH1>
           </Horizontal>
-          <HeroP data-sal="slide-up" data-sal-easing="ease" data-sal-duration="1500">I'm a third year CS major coding websites at UC Berkeley!</HeroP>
+          <HeroP data-sal="slide-up" data-sal-easing="ease" data-sal-duration="2000" data-sal-delay="250">I'm a third year CS major coding websites at UC Berkeley!</HeroP>
           <ContactButton  
             round="true" 
             data-sal="slide-right" 
@@ -41,7 +41,7 @@ const Hero = () => {
       <StaticImage 
         src="../images/coding.png" 
         alt="something" 
-        width={300}
+        width={350}
         style={{
           transform: "translate(-50%, 0%)"
         }}

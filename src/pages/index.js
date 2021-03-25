@@ -17,7 +17,7 @@ const IndexPage = () => {
 
   return (
     <Layout toggle={toggle}>
-      <SEO title="Home" />
+      <SEO title="James Shin"/>
       <DropDown toggle={toggle} isOpen={isOpen} />
       <Hero />
       <Projects />

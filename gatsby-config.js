@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `James Shin`,
+    title: ``,
     description: `Hi! I'm James, a third year CS major at UC Berkeley that loves to work with every part of the web stack!`,
-    author: `@gatsbyjs`,
+    author: `James Shin`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,
@@ -43,7 +43,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/site-icon.png`, // This path is relative to the root of the site.
       },
     },
     // `gatsby-plugin-gatsby-cloud`,
