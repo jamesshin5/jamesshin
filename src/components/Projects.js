@@ -81,7 +81,6 @@ const ProjectHeader = styled.h1`
   font-weight: bold;
   color: #3FE0D0;
   padding-bottom: 5rem;
-  padding-top:5rem;
 `
 
 const ProjectWrapper = styled.div`

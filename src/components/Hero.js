@@ -15,6 +15,7 @@ const Hero = () => {
             <HeroH1 blue="true" end="true"> James.</HeroH1>
           </Horizontal>
           <HeroP data-sal="slide-up" data-sal-easing="ease" data-sal-duration="2000" data-sal-delay="250">I'm a third year CS major coding websites at UC Berkeley!</HeroP>
+          <Horizontal>
           <ContactButton  
             round="true" 
             data-sal="slide-right" 
@@ -29,6 +30,22 @@ const Hero = () => {
           >
             Contact Me
           </ContactButton>
+          <ContactButton  
+            primary='true'
+            round="true" 
+            data-sal="slide-right" 
+            data-sal-easing="ease" 
+            data-sal-duration="2000"
+            to="project-container" 
+            smooth={true} 
+            duration={500} 
+            spy={true} 
+            exact="true" 
+            offset={-95}
+          >
+            View Projects
+          </ContactButton>
+          </Horizontal>
           <HeroButtons data-sal="slide-up" data-sal-easing="ease" data-sal-duration="1500">
             {heroButton.map((item, index)=>(
               <IconLinks to={item.link} key={index}>
@@ -43,7 +60,7 @@ const Hero = () => {
         alt="something" 
         width={350}
         style={{
-          transform: "translate(-50%, 0%)"
+          transform: "translate(-75%, 0%)"
         }}
         data-sal="slide-down" data-sal-easing="ease" data-sal-duration="2000"
       />
@@ -57,10 +74,19 @@ const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   height: 100vh;
   padding: 0 1rem;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  color: #fff;
+`
+
+const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   color: #fff;
 `
@@ -146,10 +172,10 @@ const IconLinks = styled(GatsbyLink)`
 `
 
 export const ContactButton = styled(ScrollLink)`
-  background: ${ ({primary}) => (primary ? '#a464f4' : '#3FE0D0')};
+  background: ${ ({primary}) => (primary ? '#fff' : '#3FE0D0')};
   white-space: nowrap;
   padding: ${({big}) => (big ? '16px 40px' : '10px 32px')};
-  color: #fff;
+  color: ${ ({primary}) => (primary ? '#0c0c0c' : '#fff')};
   font-size:  ${({big}) => (big ? '16px 40px' : '10px 32px')};
   outline: none;
   border: none;
@@ -158,9 +184,65 @@ export const ContactButton = styled(ScrollLink)`
   text-decoration: none;
   transition: 0.3s !important;
   border-radius: ${({round}) => (round ? '3px' : 'none')};
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: ${ ({primary}) => (primary ? 'scale(1)' : 'none')};
+	animation: ${ ({primary}) => (primary ? 'pulse 3s infinite' : 'none')};
 
   &:hover {
     background: ${({primary}) => (primary ? '#a464f4' : '#a464f4')};
     transform: translateY(-2px);
   }
+
+  @keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	50% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+`
+
+const MoreButton = styled.div`
+  background: #3FE0D0;
+	border-radius: 5px;
+  height: 2rem;
+  width: 10rem;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  cursor: pointer;
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+`
+
+const MoreText = styled.h1`
+  font-size: clamp(0.5rem, 3vw, 1rem);
 `

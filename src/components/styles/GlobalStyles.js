@@ -8,9 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   html,body {
-      /* width: 100%; */
-      height: 100%;
-      /* overflow-x: hidden; */
+      width: 100%;
+      /* height: 100%; */
+      overflow-x: hidden;
       background-color: #0c0c0c;
   }
 `

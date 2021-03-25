@@ -27,7 +27,7 @@ const Header = ({toggle}) => {
           </NavLink>
         ))}
         <NavBtn>
-            <Button href = {pdf} round="true">Resume</Button>
+            <Button href = {pdf} round="true">Résumé</Button>
         </NavBtn>
       </NavMenu>
     </Nav>
@@ -50,7 +50,7 @@ const Nav = styled.nav`
   background: #0c0c0c;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 5%;
+  padding: 3rem 5%;
   z-index: 100;
   position: fixed;
   /* padding-left: 5%;
