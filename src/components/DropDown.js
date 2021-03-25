@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { menuData } from '../data/MenuData'
 import {heroButton} from '../data/HeroButtons'
-import { Link } from 'react-scroll'
+import { Link as ScrollLink} from 'react-scroll'
 import {Link as GatsbyLink} from 'gatsby'
 import {FaTimes} from 'react-icons/fa'
 
@@ -15,16 +15,16 @@ const DropDown = ({isOpen, toggle}) => {
       <DropDownWrapper>
         <DropDownMenu>
           {menuData.map((item, index)=>(
-            <NavLink  onClick={toggle} to={item.id} key={index} smooth={true} duration={500} spy={true} exact="true">
+            <NavLink onClick={toggle} to={item.id} key={index} smooth={true} duration={500} spy={true} exact="true">
              {item.title}
             </NavLink>
           ))}
         </DropDownMenu>
         <HeroButtons>
           {heroButton.map((item, index)=>(
-            <IconLinks to={item.link} key={index}>
-              {item.icon}
-            </IconLinks>
+              <IconLinks to={item.link} key={index}>
+                {item.icon}
+              </IconLinks>
           ))}
         </HeroButtons>
       </DropDownWrapper>
@@ -104,7 +104,7 @@ const DropDownMenu = styled.div`
   }
 ` 
 
-const NavLink = styled(Link)`
+const NavLink = styled(ScrollLink)`
   color: #fff;
   display: flex;
   align-items: center;

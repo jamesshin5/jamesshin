@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-scroll'
+import {Link as ScrollLink} from 'react-scroll'
 import {Link as GatsbyLink} from 'gatsby'
 import {heroButton} from '../data/HeroButtons'
 import {StaticImage} from 'gatsby-plugin-image'
@@ -145,7 +145,7 @@ const IconLinks = styled(GatsbyLink)`
   }
 `
 
-export const ContactButton = styled(Link)`
+export const ContactButton = styled(ScrollLink)`
   background: ${ ({primary}) => (primary ? '#a464f4' : '#3FE0D0')};
   white-space: nowrap;
   padding: ${({big}) => (big ? '16px 40px' : '10px 32px')};

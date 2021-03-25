@@ -6,10 +6,6 @@ import { GlobalStyle } from "./styles/GlobalStyles"
 import "@fontsource/open-sans"
 
 const Layout = ({ children, toggle }) => {
-  if (typeof window !== "undefined") {
-    // eslint-disable-next-line global-require
-    require("smooth-scroll")('a[href*="#"]')
-  }
 
   return (
     <>
