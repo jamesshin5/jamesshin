@@ -58,7 +58,7 @@ const Hero = () => {
         alt="something" 
         style={{
           transform: "translate(-75%, 0%)",
-          width: "clamp(5rem,14vw, 18rem )"
+          width: "clamp(5rem,18vw, 18rem )"
 
         }}
         data-sal="slide-down" data-sal-easing="ease" data-sal-duration="2000"
