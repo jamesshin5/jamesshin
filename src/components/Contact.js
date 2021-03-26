@@ -123,7 +123,7 @@ const FormInput = styled.input`
   background: #f1f5f8;
   border: none;
   padding: 0.8rem 0.8rem;
-  width: clamp(30rem, 4vw, 50vw);
+  width: clamp(15rem, 40vw, 35rem);
 
   ::placeholder {
   color: #526678;
@@ -136,7 +136,7 @@ const FormTextArea = styled.textarea`
   border: none;
   padding: 0.8rem 0.8rem;
   margin-bottom: 1rem;
-  width: clamp(30rem, 4vw, 50vw);
+  width: clamp(15rem, 40vw, 35rem);
 
   ::placeholder {
   color: #526678;
