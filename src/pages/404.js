@@ -35,10 +35,10 @@ const NotFoundTitle = styled.h1`
   font-size: clamp(5rem, 5vw, 20rem);
   text-align: center;
 `
-const NotFoundDescription = styled.p`
-  color: #fff;
-  font-size: clamp(2rem, 16vw, 2rem);
-`
+// const NotFoundDescription = styled.p`
+//   color: #fff;
+//   font-size: clamp(2rem, 16vw, 2rem);
+// `
 const NotFoundButton = styled(Button)`
   margin-top: 2rem;
 `

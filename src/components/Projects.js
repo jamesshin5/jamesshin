@@ -75,7 +75,7 @@ const ProjectContainer = styled.div`
   color: #fff;
 `
 const ProjectHeader = styled.h1`
-  font-size: clamp(1.5rem, 6vw, 4rem);
+  font-size: clamp(3rem, 8vw, 4rem);
   text-align: center;
   letter-spacing: 2px;
   font-weight: bold;
@@ -127,7 +127,7 @@ const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   background: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -135,9 +135,9 @@ const ProjectInfo = styled.div`
   min-height:335px;
 
   
-  @media screen and (max-width: 280px) {
+  /* @media screen and (max-width: 280px) {
     padding: 0 1rem;
-  }
+  } */
 `
 
 const Index = styled.h1`

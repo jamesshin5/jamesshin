@@ -26,7 +26,7 @@ function getExperiences(data) {
   data.allExperiencesJson.edges.forEach( (item, index) => {
     ExperiencesArray.push(
       <ExperienceCard key={index}>
-        <ExperienceIcon></ExperienceIcon>
+        {/* <ExperienceIcon></ExperienceIcon> */}
         <ExperienceInfo>
             <ExperienceCompany>{item.node.company}</ExperienceCompany>
             <ExperienceTitle>{item.node.title}, {item.node.time}</ExperienceTitle>
@@ -83,12 +83,10 @@ const ExperienceCard = styled.div`
   flex-direction: column;
   background: #fff;
   border-radius: 3px;
-  padding-top: 4.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding:  3rem 2rem;
   /* padding: 4rem 2rem; */
-  border-radius: 3px;
   width: 100%;
+  height: 100%;
   position: relative;
   transition: 0.3s ease;
 
@@ -103,7 +101,6 @@ const ExperienceInfo = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  transform: translate(0%, -5%);
   text-align: center;
   
   /* @media screen and (max-width: 280px) {

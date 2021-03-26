@@ -24,8 +24,6 @@ const Hero = () => {
             to="contact-container" 
             smooth={true} 
             duration={500} 
-            spy={true} 
-            exact="true" 
             offset={-95}
           >
             Contact Me
@@ -77,15 +75,6 @@ const HeroContainer = styled.div`
   justify-content: space-between;
   position: relative;
   align-items: center;
-  color: #fff;
-`
-
-const FlexRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
   color: #fff;
 `
 const HeroContent = styled.div`
