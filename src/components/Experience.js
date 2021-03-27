@@ -94,8 +94,8 @@ const ExperienceCard = styled.div`
     transform: translateY(-5px);
   }
 `
-const ExperienceIcon = styled.div`
-`
+// const ExperienceIcon = styled.div`
+// `
 const ExperienceInfo = styled.div`
   display: flex;
   justify-content: flex-start;

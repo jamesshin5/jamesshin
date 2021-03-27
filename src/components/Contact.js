@@ -17,6 +17,9 @@ const Contact = () => {
         data-netlify="true"
         onSubmit="submit"
         data-netlify-honeypot="bot-field"
+        data-sal="zoom-out" 
+        data-sal-easing="ease" 
+        data-sal-duration="1000"
       >
         <input type="hidden" name="form-name" value="contact v2" />
 
