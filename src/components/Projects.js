@@ -142,7 +142,7 @@ const ProjectInfo = styled.div`
 
 const Index = styled.h1`
   padding-top:1.5rem;
-  font-size: "15px";
+  font-size: 15px;
   font-family: Open sans;
   color: #3FE0D0;
   transition: 0.3s;
@@ -155,7 +155,7 @@ const Index = styled.h1`
 const ProjectName = styled.h1`
   color: black;
   padding-top:1rem;
-  font-size: clamp(0.5rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   /* padding: 1rem 0rem; */
 `
 
@@ -163,7 +163,7 @@ const ProjectDescription = styled.p`
   color: #777777;
   padding: 1rem 0rem;
   line-height:1.5;
-  font-size: clamp(0.5rem, 3vw, 1rem);
+  font-size: clamp(1rem, 3vw, 1rem);
 `
 const ProjectButtons = styled.div`
   display: flex;

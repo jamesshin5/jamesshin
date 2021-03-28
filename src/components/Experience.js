@@ -111,7 +111,7 @@ const ExperienceCompany = styled.div`
   color: black;
   /* padding-top:3rem; */
   font-weight: bold;
-  font-size: clamp(0.5rem, 3vw, 1.1rem);
+  font-size: clamp(1rem, 3vw, 1.1rem);
   letter-spacing:2px;
 `
 const ExperienceTitle = styled.div`
@@ -119,14 +119,14 @@ const ExperienceTitle = styled.div`
   padding-top:0.5rem;
   font-weight: lighter;
   letter-spacing:2px;
-  font-size: clamp(0.5rem, 3vw, 1.1rem);
+  font-size: clamp(1rem, 3vw, 1.1rem);
 `
 const ExperienceDescription = styled.div`
   color: #888888;
   padding: 1rem 0rem;
   line-height:1.5;
   font-weight: ${({bold}) => (bold ? "normal" : "lighter")};
-  font-size: clamp(0.5rem, 3vw, 1rem);
+  font-size: clamp(1rem, 3vw, 1rem);
 `
 const ColoredText = styled.div`
   color: #3FE0D0;

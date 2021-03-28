@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: `Hi! I'm James, a third year CS major at UC Berkeley that loves to work with every part of the web stack!`,
+    title: `James Shin`,
+    description: `James Shin's Personal Site: Hi! I'm James, a third year CS major at UC Berkeley that loves to work with every part of the web stack!`,
     author: `James Shin`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
