@@ -1,38 +1,47 @@
 import * as React from "react"
-import { Link } from 'react-scroll'
-import styled from 'styled-components'
-import { FaBars } from 'react-icons/fa'
+import { Link } from "react-scroll"
+import styled from "styled-components"
+import { FaBars } from "react-icons/fa"
 
-import {menuData} from '../data/MenuData'
+import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
-import {animateScroll as scroll} from 'react-scroll'
-import pdf from '../images/resume.pdf'
+import { animateScroll as scroll } from "react-scroll"
+import pdf from "../images/resume.pdf"
 
-const Header = ({toggle}) => {
-
+const Header = ({ toggle }) => {
   const toggleHome = () => {
-    scroll.scrollToTop();
+    scroll.scrollToTop()
   }
   return (
     <Container>
       <Nav>
-      <NavLink to="/" onClick={toggleHome}>
-        JAMES SHIN
-      </NavLink>
-      <Bars onClick={toggle} />
-      <NavMenu>
-        {menuData.map((item, index)=>(
-          <NavLink to={item.id} key={index} smooth={true} duration={500} spy={true} exact="true" offset={-95}>
-            {item.title}
-          </NavLink>
-        ))}
-        <NavBtn>
-            <Button href = {pdf} round="true">Résumé</Button>
-        </NavBtn>
-      </NavMenu>
-    </Nav>
+        <NavLink to="/" onClick={toggleHome}>
+          JAMES SHIN
+        </NavLink>
+        <Bars onClick={toggle} />
+        <NavMenu>
+          {menuData.map((item, index) => (
+            <NavLink
+              to={item.id}
+              key={index}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-95}
+            >
+              {item.title}
+            </NavLink>
+          ))}
+          <NavBtn>
+            <Button href="mailto:james.shin@berkeley.edu" round="true">
+              Email for Résumé
+            </Button>
+          </NavBtn>
+        </NavMenu>
+      </Nav>
     </Container>
-  );
+  )
 }
 
 export default Header
@@ -56,7 +65,7 @@ const Nav = styled.nav`
   /* padding-left: 5%;
   padding-right: 5%; */
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     padding: 3rem 7%;
   }
 `
@@ -76,23 +85,23 @@ const NavLink = styled(Link)`
   transition: 0.5s !important;
 
   &.active {
-    color: #3FE0D0;
+    color: #3fe0d0;
     /* box-shadow: 0px 2px; */
   }
 
   &:hover {
-    color: #3FE0D0;
+    color: #3fe0d0;
     /* box-shadow: 0px 2px; */
   }
 `
 
 const Bars = styled(FaBars)`
-  display: none; 
+  display: none;
   color: #fff;
   transition: 0.3s;
 
   &:hover {
-    color: #3FE0D0;
+    color: #3fe0d0;
     /* box-shadow: 0px 2px; */
   }
 
@@ -104,16 +113,15 @@ const Bars = styled(FaBars)`
     transform: translate(-100%, 100%);
     font-size: 1.8rem;
     cursor: pointer;
-
   }
 `
 
 const NavMenu = styled.div`
   display: flex;
-  align-items:center;
+  align-items: center;
   /* margin-right: -48px; */
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `
@@ -124,7 +132,7 @@ const NavBtn = styled.div`
   margin-left: 24px;
   /* margin-right: 2rem; */
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `
