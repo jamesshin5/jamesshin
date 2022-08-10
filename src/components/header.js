@@ -35,7 +35,7 @@ const Header = ({ toggle }) => {
           ))}
           <NavBtn>
             <Button href="mailto:james.shin@berkeley.edu" round="true">
-              Email for Résumé
+              Email me for my Résumé
             </Button>
           </NavBtn>
         </NavMenu>
