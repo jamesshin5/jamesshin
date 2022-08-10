@@ -14,7 +14,7 @@ const Hero = () => {
             <HeroH1 data-sal="slide-down" data-sal-easing="ease" data-sal-duration="2000" data-sal-delay="250">Hi! I'm </HeroH1>
             <HeroH1 blue="true" end="true"> James.</HeroH1>
           </Horizontal>
-          <HeroP data-sal="slide-up" data-sal-easing="ease" data-sal-duration="2000" data-sal-delay="250">I'm a third year CS major coding websites at UC Berkeley!</HeroP>
+          <HeroP data-sal="slide-up" data-sal-easing="ease" data-sal-duration="2000" data-sal-delay="250">Welcome! I am currently working as an associate software engineer in San Jose.</HeroP>
           <Horizontal>
           <ContactButton  
             round="true" 
